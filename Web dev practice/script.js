@@ -207,16 +207,39 @@
 
 // document.querySelector("h1").append(newBtn);
 
-let btn = document.querySelector(".modebtn");
-let curr = "light";
+// let btn = document.querySelector(".modebtn");
+// let curr = "light";
 
-btn.addEventListener("click", () => {
-  if (curr === "light") {
-    curr = "dark";
-    document.querySelector("body").style.backgroundColor = "black";
-  } else {
-    curr = "light";
-    document.querySelector("body").style.backgroundColor = "white";
-  }
-  console.log(curr);
+// btn.addEventListener("click", () => {
+//   if (curr === "light") {
+//     curr = "dark";
+//     document.querySelector("body").style.backgroundColor = "black";
+//   } else {
+//     curr = "light";
+//     document.querySelector("body").style.backgroundColor = "white";
+//   }
+//   console.log(curr);
+// });
+
+// function sum(a, b) {
+//   console.log(a+b);
+// };
+
+// function calculator(a, b, sumCallback) {
+//   sumCallback(a,b);
+// };
+
+// calculator(1,3, sum);
+
+function getData(dataID, getNextData) {
+  setTimeout(() => {
+    console.log(dataID);
+    if(getNextData) {
+      getNextData();
+    }
+  }, 2000);
+}
+
+getData(1, ()=> {
+  getData(2);
 });

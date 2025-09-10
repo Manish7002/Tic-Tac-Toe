@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #2c2f36;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-color: #f6c052;
+  color: #0b1b34;
+  border-radius: 1rem;
+}
+
+.loginpage {
+  background-color: #0b1b34;
+  border-radius: 1.7rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 420px; /* Set a max width for large screens */
+  margin: auto;
+  margin-top: 6.5rem;
+}
+
+.input {
+  padding: 0 1rem;
+}
+
+.checkbox {
+  padding: 0 1rem;
+  color: #62c3c3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.forgot {
+  color: #62c3c3;
+  text-decoration: none;
+}
+
+.signbtn {
+  width: 100%;
+  max-width: 320px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .loginpage {
+    margin-top: 10rem;
+  }
+}
+.msgpopup {
+  background-color: #62c3c3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 1050;
+}
+.msg {
+  color: black;
+}
+.msgbtn {
+  background-color: rgb(5, 54, 30);
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.hide {
+  display: none;
+}

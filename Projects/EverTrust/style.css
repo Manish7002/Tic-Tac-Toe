@@ -1,0 +1,48 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  width: 15em;
+}
+#navlinks a {
+  text-decoration: none;
+  color: black;
+}
+#shadow-bottom {
+  box-shadow: 0 6px 70px -4px rgba(0, 0, 0, 0.5);
+  /* Optional smoothness */
+  transition: box-shadow 0.3s ease;
+}
+.herohead span {
+  color: #15284b;
+}
+
+#offercont {
+  box-shadow: 0 -6px 60px -6px rgba(0, 0, 0, 0.8);
+}
+#offerbox {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+#offerbox:hover {
+  background-color: #15284b;
+  color: white;
+}
+#manimg {
+  width: 40%;
+}
+#aiimg {
+  border: 1px solid transparent;
+  border-radius: 90px;
+}
+#feedbackform {
+  width: 65%;
+}
+
+@media (max-width: 576px) {
+  .btn-instagram {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
